@@ -12,7 +12,7 @@ public class yoyaloginstepfs {
 	WebDriver driver;
 	
 	@Given("^打开yoya登录页面 \"([^\"]*)\"$")
-	public void 打开yoya登录页面(String arg1) throws Throwable {
+	public void openYoya(String base) throws Throwable {
 	    // Write code here that turns the phrase above into concrete actions
 	    //throw new PendingException();
 		driver = new ChromeDriver();
@@ -21,7 +21,7 @@ public class yoyaloginstepfs {
 	}
 
 	@Then("^检查yoya页面是否打开$")
-	public void 检查yoya页面是否打开() throws Throwable {
+	public void checkYoya() throws Throwable {
 	    // Write code here that turns the phrase above into concrete actions
 	    //throw new PendingException();
 		Assert.assertEquals("优芽网 帮您更优秀- www.yoya.com", driver.getTitle());
@@ -29,7 +29,7 @@ public class yoyaloginstepfs {
 	}
 
 	@Given("^点击立刻登录按键$")
-	public void 点击立刻登录按键() throws Throwable {
+	public void loginYoya() throws Throwable {
 	    // Write code here that turns the phrase above into concrete actions
 	    //throw new PendingException();
 		Thread.sleep(5000);
@@ -38,7 +38,7 @@ public class yoyaloginstepfs {
 	}
 
 	@Then("^检查登录页面是否打开$")
-	public void 检查登录页面是否打开() throws Throwable {
+	public void checkLogin() throws Throwable {
 	    // Write code here that turns the phrase above into concrete actions
 	    //throw new PendingException();
 		Thread.sleep(5000);
@@ -51,7 +51,7 @@ public class yoyaloginstepfs {
 	}
 
 	@When("^输入用户名 \"([^\"]*)\" 密码 \"([^\"]*)\"$")
-	public void 输入用户名_密码(String username, String password) throws Throwable {
+	public void loginIn(String username, String password) throws Throwable {
 	    // Write code here that turns the phrase above into concrete actions
 	   // throw new PendingException();
 		Thread.sleep(5000);
@@ -62,7 +62,7 @@ public class yoyaloginstepfs {
 	}
 
 	@Then("^检查是否登录成功 \"([^\"]*)\"$")
-	public void 检查是否登录成功(String exceptText) throws Throwable {
+	public void checkSignin(String exceptText) throws Throwable {
 	    // Write code here that turns the phrase above into concrete actions
 	    //throw new PendingException();
 		Thread.sleep(5000);

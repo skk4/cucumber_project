@@ -6,7 +6,7 @@ import org.junit.runner.RunWith;
 
  
 @RunWith(Cucumber.class)
-@CucumberOptions(plugin={"pretty","html:target/cucumber", "json:target/cucumber.json"}, features={"src/test/java/Annotation"}, tags="@yoyaLogin")
+@CucumberOptions(plugin={"pretty","html:target/cucumber", "json:target/cucumber.json"}, features={"src/test/java/Annotation"})
  
 public class AppTest {
 	
